@@ -1,3 +1,13 @@
-<p>
-  navbar works!
-</p>
+<mat-toolbar class="mat-primary">
+    <h2>Admin Portal</h2>
+
+    <span>
+        <span *ngIf = "loggedIn" class="spacer">
+             <a mat-button >View Book List</a>
+            <a mat-button >Add Book</a>
+            <a mat-button >Logout</a>
+         </span>
+    </span>
+</mat-toolbar>
+
+<button mat-raised-button class="mat-warn" (click) = "toggleDisplay()">Toggle</button>
