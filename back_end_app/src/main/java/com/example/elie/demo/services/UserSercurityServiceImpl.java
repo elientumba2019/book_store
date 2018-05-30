@@ -1,7 +1,6 @@
 package com.example.elie.demo.services;
 import com.example.elie.demo.model.User;
 import com.example.elie.demo.repository.UserDao;
-import com.example.elie.demo.services.interfaces.UserSecurityService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +11,11 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class UserSercurityServiceImpl implements UserSecurityService, UserDetailsService {
+public class UserSercurityServiceImpl implements UserDetailsService {
 
 
     private static final Logger LOG = LoggerFactory.getLogger(UserSercurityServiceImpl.class.getName());
-    private UserDao userDao;
+    private UserDao userDao; //injected
 
 
 
