@@ -112,7 +112,7 @@ public class User implements Serializable , UserDetails {
 
     @Override
     public String getPassword() {
-        return null;
+        return this.password;
     }
 
     @Override
