@@ -10,5 +10,5 @@ public class BookStoreApplication {
         SpringApplication.run(BookStoreApplication.class, args);
     }
 
-    // TODO video 12 folder 2 ; entity relationship diagram
+
 }
