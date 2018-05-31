@@ -22,6 +22,7 @@ public class BookstoreAngularApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BookstoreAngularApplication.class, args);
+		//TODO section 4 video 21
 	}
 
 	@Override
