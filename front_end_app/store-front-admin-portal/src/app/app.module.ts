@@ -9,6 +9,7 @@ import 'hammerjs';
 import { MatbrowserModule } from './matbrowser.module';
 import { LoginComponent } from './components/login/login.component';
 import { LoginService } from './services/login.service';
+import { RoutingModule } from './routing.module';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,14 @@ import { LoginService } from './services/login.service';
     NavbarComponent,
     LoginComponent,
   ],
+  
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    MatbrowserModule
+    MatbrowserModule,
+    RoutingModule
 
   ],
   providers: [LoginService],

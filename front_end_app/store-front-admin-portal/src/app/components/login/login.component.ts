@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
     this.loginService.sendCredentials(this.credentials.username , this.credentials.password)
       .subscribe(res =>{
         console.log(res);
-        localStorage.setItem(this.token , res.json().token);
+        localStorage.setItem(this.token , res.toString());
         this.loggedIn = true;
         location.reload();
       } , err =>{

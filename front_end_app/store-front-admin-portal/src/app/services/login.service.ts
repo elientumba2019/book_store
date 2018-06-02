@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import{ Http , Headers} from '@angular/http'
 import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 
 
 
@@ -9,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class LoginService {
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
 
 
@@ -23,7 +24,7 @@ export class LoginService {
     let url = 'http://localhost:8081/token';
     let encodedCredentials = btoa(username + ":" + password);
     let basicHeader = "Basic " + encodedCredentials;
-    let headers = new Headers({
+    let headers = new HttpHeaders({
       'Content-Type' : 'application/x-www-urlencoded',
       'Authorization' : 'basicHeader'
     });
