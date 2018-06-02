@@ -20,7 +20,7 @@ export class LoginService {
    * @param password :: user password
    */
   sendCredentials(username:string , password:string){
-    let url = 'http://localhost:8181/token';
+    let url = 'http://localhost:8081/token';
     let encodedCredentials = btoa(username + ":" + password);
     let basicHeader = "Basic " + encodedCredentials;
     let headers = new Headers({
